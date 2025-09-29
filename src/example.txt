@@ -1,0 +1,16 @@
+::js
+const { isModalOpen: isModal1Open, openModal: openModal1, closeModal: closeModal1 } = useModal('modal1');
+
+::actions
+onClick={openModal2}
+
+::html
+<Modal isOpen={isModal1Open} title='More Information' handleClose={closeModal1}>
+    <Body>
+        <p>Some text here</p>
+    </Body>
+    <Footer>
+        <button className='btn btn-danger' onClick={closeModal1}>Close</button>
+        <button className='btn btn-success'>Save</button>
+    </Footer>
+</Modal>

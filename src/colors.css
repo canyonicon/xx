@@ -1,0 +1,87 @@
+/* define css colors variables*/
+:root{
+
+    --bs-primary-rgb: 176, 146, 85;
+    --bs-success-rgb: 22, 93, 49;
+  
+  
+    --primary: rgba(var(--bs-primary-rgb), 1) !important;
+    --primary-8: rgb(175, 152, 106) !important;
+    --primary-5: rgba(var(--bs-primary-rgb), 0.4) !important;
+    --primary-light: rgba(var(--bs-primary-rgb), 0.1);
+    --primary-dark: rgb(175, 139, 67);
+  
+    --success: rgba(var(--bs-success-rgb), 1) !important;
+    --success-8: rgb(30, 128, 67) !important;
+    --success-5: rgba(var(--bs-success-rgb), 0.4) !important;
+    --success-light: rgba(var(--bs-success-rgb), 0.1);
+    --success-dark: rgb(17, 68, 36);
+  
+  
+  
+  
+  
+    --white: #fff;
+    
+    /* --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --black: #000;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary-color: #B09255;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #6c757d;
+    --gray-dark-color: #343a40; */
+  
+    /* --primary: #B09255 !important; */
+    
+  
+    --bs-border-color: var(--primary-8);
+    --bs-success: rgb(var(--bs-success-rgb));
+    
+  }
+
+
+  
+  [data-bs-theme="dark"] {
+    
+    --bs-primary-rgb: 176, 146, 85;
+    --bs-success-rgb: 76, 175, 80;
+  
+    --primary: rgba(var(--bs-primary-rgb), 1) !important;
+    --primary-8: rgb(175, 152, 106) !important;
+    --primary-5: rgba(var(--bs-primary-rgb), 0.8) !important;
+    --primary-light: rgba(var(--bs-primary-rgb), 0.5);
+    --primary-dark: rgb(175, 139, 67);
+  
+    --success: rgba(var(--bs-success-rgb), 1) !important;
+    --success-8: rgb(91, 210, 95) !important;
+    --success-5: rgba(var(--bs-success-rgb), 0.4) !important;
+    --success-light: rgba(var(--bs-success-rgb), 0.2);
+    --success-dark: rgb(17, 68, 36);
+    
+    --bs-dark: #fff;
+    --bs-white: #212529;
+    --bs-white-rgb: 33, 37, 41;
+
+
+    .css-13cymwt-control{
+      background-color: var(--bs-white);
+      border-color: var(--primary-5);
+    }
+    
+    
+  }

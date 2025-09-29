@@ -1,0 +1,199 @@
+/* 
+ * ## Device Breakpoints
+ * 
+ * - **Mobile:** 600px
+ * - **Tablet:** 768px
+ * - **Desktop:** 1024px
+ * - **Large:** 1200px
+ * - **Huge:** 1400px
+ * 
+ * ## Usage
+*/
+/* styles for mobile only */
+@media only screen and (max-width: 600px) {
+    .w-50{
+        width: 100% !important;
+    }
+    .container{
+      display: 97% !important;
+    }
+    .container::before{
+      display: none !important;
+    }
+
+    .hero{
+      height: auto;
+    }
+    h1.title{
+      font-size: 25px !important;
+    }
+    h2.title{
+      font-size: 22px !important;
+    }
+    h3.title{
+      font-size: 18px !important;
+    }
+    .description{
+      font-size: 14px !important;
+      line-height: 1.4rem;
+    }
+
+    /* hero search */
+    .location-switcher{
+      right: 44%;
+      top: 75px;
+      cursor: pointer;
+      transform: rotate(90deg);
+    }
+
+    /* destination */
+    .slides{
+      height: 500px;
+    }
+    .carousel-inner img{
+      height: 450px !important;
+    }
+
+    /* call to action */
+    .subscribe{
+      background-size: cover;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    /* navbar */
+    .navbar{
+      padding-top: 10px;
+    }
+    .bg-light .nav-link{
+      color: var(--bs-white) !important;
+    }
+
+    .navbar-collapse{
+      background: var(--bs-success);
+      padding: 20px;
+    }
+
+    
+    .navbar-collapse form{
+      margin-top: 20px;
+      justify-content: space-between;
+    }
+
+    .navbar-toggler-icon{
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>');
+    }
+
+    /* global */
+    .gap-5{
+      gap: 2em !important;
+    }
+
+
+    .filter, .cut-border{
+      display: none !important;
+    }
+
+    .flights .card.custom-shadow{
+      padding: 20px;
+    }
+
+    .ceo-title{
+        margin-left: 0 !important;
+        font-size: 2rem !important;
+    }
+
+    /* register/login */
+    .bg, .register .overlay-side, .register .overlay{
+      height: 100%;
+    }
+
+    .ribbon{
+        width: 100%;
+    }
+
+    .footer .pe-5{
+        padding-left: 10px !important;
+    }
+
+
+
+    /* admin */
+    .offcanvas{
+        z-index: 10000;
+        width: 100% !important;
+    }
+
+    .modal-close{
+        display: none;
+    }
+
+    .navbar{
+        z-index: 10000;
+    }
+    
+    .admin-menu{
+        position: fixed;
+        width: 100% !important;
+        left: 0;
+        top: 160px;
+        background: var(--bs-white) !important;
+    }
+    
+    .admin-menu-logo{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    .admin-sidebar-container{
+        height: 100%;
+    }
+
+}
+
+/* styles for tablet portrait only */
+@media only screen and (min-width: 600px) {
+  /* .container::before{
+    display: none !important;
+  } */
+
+  .navbar-collapse form{
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+
+  .navbar-toggler-icon{
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>');
+  }
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.navbar-collapse form{
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.navbar-toggler-icon{
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>');
+}
+
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+.container{
+  max-width: 85% !important;
+}
+}

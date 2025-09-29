@@ -1,0 +1,48 @@
+*{
+  direction: rtl;
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+
+.rfm-marquee-container{
+  direction: ltr;
+}
+
+.footer{
+  .container::before{
+    right: 0;
+    left: unset;
+  }
+  a.footer-link:hover::before{
+    margin-left: 10px;
+    margin-right: unset;
+  }
+  
+}
+
+.location-switcher{
+  left: -26px;
+  right: unset;
+}
+
+h3.custom-heading:before{
+  left: unset;
+  right: 0;
+}
+
+.carousel-item{
+  float: left !important;
+  margin-left: 0;
+}
+
+.accordion-button::after{
+  margin-left: unset;
+}
+
+.ceo .ceo-title{
+  margin-right: -100px;
+  margin-left: unset;
+}
+
+.image-modal .arrow-right, .arrow-left, .menu-chevron-right{
+  transform: rotate(180deg);
+}
