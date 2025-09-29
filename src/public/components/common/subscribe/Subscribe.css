@@ -1,0 +1,19 @@
+.subscribe{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.subscribe .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: calc(100vh - 50px); */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}

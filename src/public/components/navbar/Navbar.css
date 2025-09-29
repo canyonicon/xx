@@ -1,0 +1,13 @@
+.front{
+    .navbar{
+        background-color: transparent;
+    }
+    
+    .nav-link{
+        color: var(--bs-white) !important;
+    }
+
+    .nav-link.active{
+        font-weight:600;
+    }
+}

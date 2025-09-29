@@ -1,0 +1,90 @@
+.custom-btn{
+    border: 2px solid var(--primary-light) !important;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: var(--white) !important;
+}
+
+.btn-check:checked+.btn svg path{
+    stroke: var(--white) !important;
+    fill: var(--white) !important;
+}
+
+.time-date .time{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cut-border{
+    width: 1px;
+    border-right: 2px dashed var(--primary-8);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cut-border:before{
+    content: '';
+    position: absolute;
+    top: -35px;
+    width: 35px;
+    height: 18px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: var(--bs-light);
+    box-shadow: 0px -1px 18px -4px rgba(0,0,0,0.1) inset;
+}
+
+.cut-border:after{
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    width: 35px;
+    height: 18px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: var(--bs-light);
+    box-shadow: 0px -1px 18px -4px rgba(0,0,0,0.1) inset;
+}
+
+.flights .card.custom-shadow{
+    padding: 35px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px 0px rgba(0,0,0,0.1);
+  }
+
+
+.flight-flow .flight-line-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-light);
+    
+    /* transform: translate(-50%, -50%); */
+}
+
+.plane-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.plane-center div.small{
+    font-size: 11px;
+    position: absolute;
+    bottom: -25px;
+
+}
+.flight-flow .flight-line{
+    height: 2px;
+    background-color: var(--primary-light);
+}

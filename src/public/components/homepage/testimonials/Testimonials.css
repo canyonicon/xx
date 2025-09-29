@@ -1,0 +1,24 @@
+.testimonials{
+    background-color: var(--primary-light);
+    .card{
+        background-color: transparent;
+    }
+
+    .rating-stars i{
+        color: #FCD34D
+    }
+
+    .badge{
+        font-size: 12px;
+        font-weight: 500;
+        /* --bs-success-rgb: 197, 225, 208; */
+    }
+
+    .description{
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    
+
+}

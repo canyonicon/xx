@@ -1,0 +1,13 @@
+.gallery{
+    .gallery-image{
+        transition: all 0.3s ease-in-out;
+    }
+    .image-container{
+        overflow: hidden;
+    }
+    .image-container:hover .gallery-image{
+        box-shadow: 0 0 65px rgba(0,0,0,0.4);
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}

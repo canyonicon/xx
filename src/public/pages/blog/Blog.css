@@ -1,0 +1,25 @@
+.main-blog{
+    .card{
+        background-color: transparent;
+        border:none;
+    }
+
+    
+
+    .main-img{
+        height: 600px;
+    }
+
+    img{
+        height: 220px;
+    }
+
+    .card-img-top img{
+        filter: none;
+    }
+
+}
+
+.blog-card{
+    border: none;
+}

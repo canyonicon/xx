@@ -1,0 +1,62 @@
+.hero{
+    /* margin-top: 5rem; */
+    /* padding-top: 3rem; */
+    padding-bottom: 5rem;
+    /* height: calc(100vh - 50px); */
+    height: 800px;
+    background-image: url("/assets/images/hero-bg.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* animation: changeBackgroundPosition 10s ease-in-out infinite; */
+    
+}
+
+.hero .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: calc(100vh - 50px); */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.hero h1.title{
+    font-size: 75px;
+    font-weight: 500;
+}
+
+.hero .slider{
+    padding-bottom: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    /* gradient background bottom black and top transparent */
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+
+}
+
+.hero .slider h5.title{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+@keyframes changeBackgroundPosition{
+    0%{
+        background-position: bottom;
+    }
+    50%{
+        background-position: top;
+    }
+    100%{
+        background-position: bottom;
+    }
+}

@@ -1,0 +1,19 @@
+.social-icon{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: rgb(var(--bs-dark-rgb));
+    color: rgb(var(--bs-white-rgb));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.social-icon:hover{
+    background-color: rgb(var(--bs-primary-rgb));
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out;
+
+}

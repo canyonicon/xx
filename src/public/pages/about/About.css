@@ -1,0 +1,91 @@
+.easy-booking{
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    animation: changeBackgroundPosition 50s ease-in-out infinite;
+    
+
+    h1.title{
+        font-size: 4rem;
+        text-shadow: 1px 3px 4px #4b4a4a;
+    }
+
+    .description{
+        text-shadow: 2px 3px 2px #4b4a4a;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* create gradeint  */
+        background: linear-gradient(0deg, rgba(62, 164, 189, 0.9) 50%, rgba(62, 164, 189, 0.5) 100%);
+        z-index: 0;
+    }
+
+    .play-button{
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: var(--bs-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .play-button:hover .bi{
+        transform: scale(1.4);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.easy-booking:hover .play-button .bi{
+    color: var(--bs-white);
+}
+.easy-booking:hover .play-button{
+    background-color: var(--primary-8);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 15px 15px var(--primary-light);
+}
+
+
+.ceo{
+    background-color: var(--primary-light);
+
+    .ceo-title{ 
+        margin-left: -100px;
+        font-size: 4rem;
+        font-weight: 600;
+    }
+}
+
+.ribbon{
+    position: absolute;
+    bottom:0;
+    width: calc(100% + 108px);
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+/* create a keyframe for change background position of easy-background */
+@keyframes changeBackgroundPosition{
+    0%{
+        background-position: bottom;
+    }
+    50%{
+        background-position: top;
+    }
+    100%{
+        background-position: bottom;
+    }
+}

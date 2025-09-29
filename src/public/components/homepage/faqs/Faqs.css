@@ -1,0 +1,39 @@
+.faqs{
+
+    .accordion-button{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .accordion-button::after{
+        background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.5 10.8037C19.5 16.0287 15.2484 20.2675 10 20.2675C4.75158 20.2675 0.5 16.0287 0.5 10.8037C0.5 5.57865 4.75158 1.33984 10 1.33984C15.2484 1.33984 19.5 5.57865 19.5 10.8037Z" fill="white" stroke="%236E7284"/></svg>');
+    }
+    .accordion-button:not(.collapsed)::after{
+        background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10" cy="10.5498" rx="10" ry="9.96382" fill="%23222222"/></svg>');
+    }
+
+    .accordion-item{
+        border:none;
+        
+    }
+    .accordion-button:not(.collapsed){
+        background-color: var(--primary-light);
+        box-shadow: none;
+        
+    }
+
+    .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed{
+        border-radius: 10px 10px 0px 0px;
+        overflow: hidden;
+    }
+
+    .accordion-collapse.collapse.show .accordion-body{
+        border-radius: 0px 0px 10px 10px;
+        background-color: var(--primary-light);
+    }
+
+    .accordion-body{
+        font-size: 16px;
+        line-height: 1.7;
+        font-weight: 300;
+    }
+}

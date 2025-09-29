@@ -1,0 +1,21 @@
+{
+    "welcome": "Welcome",
+    "language": "Language",
+    
+    "required": "This field is required",
+    "Required": "This field is required",
+    "invalid_email": "Please enter a valid email address",
+    "Invalid email": "Please enter a valid email address",
+    "password": "Password must be at least 6 characters long",
+    "passwordConfirm": "Passwords do not match",
+    "short": "The entered value is too short",
+    "long": "The entered value is too long",
+    "min": "Please enter a value greater than or equal to {value}",
+    "max": "Please enter a value less than or equal to {value}",
+
+
+    "Customers": "Customers",
+    "male": "Male",
+    "female": "Female"
+    
+}

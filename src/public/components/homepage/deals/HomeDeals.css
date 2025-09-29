@@ -1,0 +1,74 @@
+.deals .card{
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;    
+
+    .card-title{
+        font-size: 45px;
+        font-weight: 500;
+    }
+
+    .card-pricing{
+        font-size: 18px;
+        
+    }
+
+    .price{
+        font-size: 30px;
+    }
+
+    .price sup{
+        font-size: 14px;
+    }
+
+    h5.card-title{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+}
+
+/* applye z-index 1 all elements except .overlay */
+.deals .card *:not(.overlay-image){
+    z-index: 6666;
+}
+/* .deals .card *:not(.overlay){
+    z-index: 6666;
+} */
+
+.overlay-image{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.deals .card .overlay{
+    z-index: 5;
+    content: '';
+    position: absolute;
+    /* give me gradient black and transparent */
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0, 0, 0, 0.5));
+    height: 100%;
+    width: 100%;
+}
+
+/* scale background image on .card hover with in and out transition dont use scale */
+.deals .card:hover .overlay-image{
+    z-index: 1;
+    transform: scale(1.15);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.deals .card:hover .overlay{
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0, 0, 0, 0.7));
+}
+
