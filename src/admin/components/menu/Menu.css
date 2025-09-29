@@ -1,0 +1,29 @@
+.admin-menu {
+    width: 280px !important;
+    
+    position: relative;
+    .nav-link {
+        color: var(--bs-dark) !important;
+    }
+    .nav-link.active {
+        background-color: var(--primary-light);
+    }
+    
+    .btn-toggle:is(.collapsed) .menu-chevron-down {
+        display: none;
+    }
+    
+    .btn-toggle:is(.collapsed) .menu-chevron-right {
+        display: block;
+    }
+    
+    .btn-toggle:not(.collapsed) .menu-chevron-down {
+        display: block;
+    }
+    
+    
+    .btn-toggle:not(.collapsed) .menu-chevron-right {
+        display: none;
+    }
+
+}

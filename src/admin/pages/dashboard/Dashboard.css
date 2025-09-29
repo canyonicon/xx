@@ -1,0 +1,17 @@
+.dash-card{
+    .number{
+        font-size: 24px;
+    }
+    .percent{
+        font-size: 12px;
+    }
+}
+
+
+
+
+@property --p {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+}

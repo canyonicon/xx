@@ -1,0 +1,50 @@
+.plan-layout{
+
+    padding: 20px 0;
+    
+}
+
+.seat-input{
+    display: none;
+}
+
+
+
+/* change background of seat-label if .seat-input is chekced */
+.seat-label, .seat-label-dummy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--success-5);
+    background-color: var(--bs-white);
+    cursor: pointer;
+    color: var(--bs-white);
+    font-weight: 600;
+    user-select: none;
+}
+
+.seat-label-dummy{
+    border: none;
+    cursor: default;
+    background-color: transparent;
+    color: var(--bs-dark);
+}
+
+.seat-label:hover{
+    background-color: var(--success-5);
+}
+
+/* when checked change color of only lable of checked  */
+.seat-input:checked + .seat-label{
+    background-color: var(--success) !important;
+    
+}
+
+.seat-label.unavailable{
+    background-color: var(--primary);
+    cursor: not-allowed;
+
+}
