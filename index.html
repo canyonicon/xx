@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyTaibah</title>
+    <script type="module" crossorigin src="/assets/index-76KfBeZE.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Gh4EaGyX.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="modal-root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
+    <script>
+      // execute the script when the DOM is loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Close navbar when clicked on link
+        document.querySelectorAll('.navbar-nav li').forEach((e) => {
+          e.addEventListener('click', () => {
+            document.querySelector('.admin-menu').classList.remove('show');
+          });
+        });
+      });
+      </script>
+  </body>
+</html>
